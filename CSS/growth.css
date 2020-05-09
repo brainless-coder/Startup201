@@ -1,0 +1,519 @@
+html, body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+*{  margin: 0; padding: 0;
+   font-family: 'Poppins', sans-serif;  }
+
+a{  text-decoration:none; }
+
+a:hover{  text-decoration: none;  }
+
+li{ list-style: none; }
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+p{
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #606060;
+}
+
+
+i{
+  color: #2fccd0;
+}
+
+
+
+
+/********************scroll bar styling*****************/
+
+::-webkit-scrollbar{
+  width: 30px;
+}
+
+::-webkit-scrollbar-track{
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg,  #f8fc05, #f90404);
+  border-radius: 40%;
+  height: 35%;
+}
+
+/*******************scrollbar styling ends****************/
+
+
+/*******************social icons start********************/
+
+.social{
+  position: fixed;
+  top: 110px;
+  z-index: 10;
+}
+
+.social ul{
+  list-style: none;
+  padding: 0;
+  transform: translateX(-270px);
+}
+
+.social ul li {
+  display: block;
+  margin: 5px;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+
+.social ul li:hover{
+  transform: translateX(110px);
+}
+
+.social ul li.twitter:hover {
+  background-color: #55acee;
+}
+
+.social ul li.facebook:hover {
+  background-color: #3d5999;
+}
+
+.social ul li.instagram:hover {
+  background-color: #e4405f;
+}
+
+.social ul li.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.social ul li.call:hover {
+  background-color: #efaf40;
+}
+
+.social ul li.gmail:hover {
+  background-color: #de5145;
+}
+
+.social ul li.whatsapp:hover {
+  background-color: #47c256;
+}
+
+.social ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.social ul li i {
+  text-align: center;
+  margin-left: 10px;
+  color: white;
+  /*background-color: white;*/
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transform: rotate(0deg);
+}
+
+.social ul li:hover i{
+  transform: rotate(360deg);
+  transition: all 1s;
+  margin-right: 15px;
+}
+
+/*********************social icons ends**********************/
+
+/****************dropdown css starts*******************/
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.9); 
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*********************dropdown css ends*********************/
+
+/*********************parallax css starts*******************/
+
+.parallaxone{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/poster.jfif);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxone h1{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  width: 58%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: #6ae8b1;
+  color: white;
+  font-weight: bold;
+}
+
+.parallaxtwo{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/teamtable.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxtwo h1{
+  position: relative;
+  margin: auto;
+  top: 290px;
+  width: 33%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.para{
+  padding: 40px;
+  text-align: center;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+
+.para p{
+  font-size: 20px;
+  color: white;
+}
+
+.parallaxthree{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/followers.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxthree h1{
+  position: relative;
+  margin: auto;
+  top: 280px;
+  width: 60%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: lightblue;
+  color: green;
+  font-weight: bold;
+}
+
+.parallaxfour{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/students.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxfour h1{
+  position: relative;
+  margin: auto;
+  top: 270px;
+  width: 55%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: #c7f466;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxfive{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/skill.webp);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxfive h1{
+  position: relative;
+  margin: auto;
+  top: 270px;
+  width: 59%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: #47b2ef;
+  color: yellow;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxsix{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/internship.jpeg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxsix h1{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  width: 59%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxseven{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/network.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxseven h1{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  width: 72%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: #6ae8b1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxeight{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/recommend.webp);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxeight h1{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  width: 95%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: #f29641;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxnine{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/proj.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxnine h1{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  width: 58%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxten{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/page8.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.parallaxten h1{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  width: 64%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  background-color: #f29641;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.parallaxeleven{
+  width: 100%;
+  height: 600px;
+  background-image: url(../Images/page3.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.parallaxeleven a{
+  position: relative;
+  margin: auto;
+  top: 300px;
+  height: auto;
+  padding: 10px;
+  background-color: orange;
+  color: blue;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/**********************parallax css ends*************************/
+
+
+/* **************Fotter css starts****************** */
+
+.footersec{
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  background: #00abff;
+  position: relative;
+}
+
+.footersec p{
+  color: #fff;
+}
+
+.footersec li a{
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.footersec h3{
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.5rem!important;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(5.9, 1.6, 9.8, 6.3);
+}
+
+#myBtn{
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  background: #00abff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#myBtn:hover{
+  background: #606060;
+}
+
+.input-group-text{
+  color: #fff;
+  background: #5dc0de !important;
+  border-radius: 0px 100px  100px 0px !important;
+  min-width: 50px;
+  min-height: 40px;
+}
+
+.mail-input{
+  border-radius: 100px 0px 0px 100px!important;
+  min-width: 150px;
+  min-height: 45px;
+}
+
+/* **************Fotter css ends****************** */
