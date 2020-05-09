@@ -65,7 +65,7 @@ i{
 .social{
 	position: fixed;
 	top: 110px;
-	z-index: 10;
+	z-index: 1;
 }
 
 .social ul{
