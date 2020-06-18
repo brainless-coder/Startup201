@@ -44,7 +44,7 @@ i{
 /********************scroll bar styling*****************/
 
 ::-webkit-scrollbar{
-	width: 30px;
+	width: 28px;
 }
 
 ::-webkit-scrollbar-track{
@@ -54,58 +54,66 @@ i{
 
 ::-webkit-scrollbar-thumb{
 	background: linear-gradient(45deg, #06dee1, #79ff6c);
-	border-radius: 40%;
-	min-height: 32%;
+	border-radius: 45%;
+	min-height: 34%;
 }
 
 /*******************scrollbar styling ends****************/
-
 
 /*******************social icons start********************/
 
 .social{
   position: fixed;
-  top: 110px;
+  top: 125px;
   z-index: 1;
 }
 
 .social ul{
   list-style: none;
   padding: 0;
+  transform: translateX(-270px);
 }
 
 .social ul li {
   display: block;
-  width: 50px;
+  margin: 5px;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  width: 300px;
+  text-align: right;
   padding: 10px;
   border-radius: 0 30px 30px 0;
+  transition: all 1s;
 }
 
-.social ul li.twitter {
+.social ul li:hover{
+  transform: translateX(110px);
+}
+
+.social ul li.twitter:hover {
   background-color: #55acee;
 }
 
-.social ul li.facebook {
+.social ul li.facebook:hover {
   background-color: #3d5999;
 }
 
-.social ul li.instagram {
+.social ul li.instagram:hover {
   background-color: #e4405f;
 }
 
-.social ul li.linkedin {
+.social ul li.linkedin:hover {
   background-color: #0077b5;
 }
 
-.social ul li.call {
+.social ul li.call:hover {
   background-color: #efaf40;
 }
 
-.social ul li.gmail {
+.social ul li.gmail:hover {
   background-color: #de5145;
 }
 
-.social ul li.whatsapp {
+.social ul li.whatsapp:hover {
   background-color: #47c256;
 }
 
@@ -116,14 +124,24 @@ i{
 
 .social ul li i {
   text-align: center;
-  color: white;
+  margin-left: 14px;
+  color: black;
+  /*background-color: white;*/
   padding: 10px;
+  /*border-radius: 50%;*/ 
   width: 20px;
   height: 20px;
   font-size: 20px;
+  transform: rotate(0deg);
+}
+
+.social ul li:hover i{
+  transform: rotate(360deg);
+  transition: all 1s;
 }
 
 /*********************social icons ends**********************/
+
 
 /* *************** actual css classes starts **************** */
 
@@ -632,6 +650,7 @@ form:hover .form-button button{
 /* ******************Media Queries****************** */
 
 @media(max-width: 768px) {
+
 	.nav-item{
 		text-align: center!important;
 	}
@@ -657,4 +676,65 @@ form:hover .form-button button{
 	.footerdiv{
 		margin: 30px 0;
 	}
+	
+	/*******************social icons starts********************/
+
+	
+	.social ul{
+	  list-style: none;
+	  padding: 0;
+	  width: 50px;
+	}
+
+	.social ul li {
+  	display: block;
+  	padding: 10px;
+  	border-radius: 0 30px 30px 0;
+	}
+	
+	
+	.social ul li.twitter {
+	  background-color: #55acee;
+	}
+	
+	.social ul li.facebook {
+	  background-color: #3d5999;
+	}
+	
+	.social ul li.instagram {
+	  background-color: #e4405f;
+	}
+	
+	.social ul li.linkedin {
+	  background-color: #0077b5;
+	}
+	
+	.social ul li.call {
+	  background-color: #efaf40;
+	}
+	
+	.social ul li.gmail {
+	  background-color: #de5145;
+	}
+	
+	.social ul li.whatsapp {
+	  background-color: #47c256;
+	}
+	
+	.social ul li a{
+	  color: white;
+	  text-decoration: none;
+	}
+	
+	.social ul li i {
+	  text-align: center;
+	  color: white;
+	  padding: 10px;
+	  width: 20px;
+	  height: 20px;
+	  font-size: 20px;
+	}
+
+/*********************social icons ends**********************/
+
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>About Us Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS/about.css">
+</head>
+<body>
+	<div class="aboutus">
+		<div class="column active">
+			<div class="content">
+				<h1>1</h1>
+				<div class="box">
+					<h2>Who are we ?</h2>
+					<p>We are a team of startup enthusiasts mainly from IITs, NITs, IIMs, DU and students from other colleges.</p>
+				</div>
+			</div>
+			<div class="bg bg1"></div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<h1>2</h1>
+				<div class="box">
+					<h2>What do we do ?</h2>
+					<p>We work on different modules related to startup which help us to get in-depth knowledge of startups. We help our team members to grow on different social media platforms.</p>
+				</div>
+			</div>
+			<div class="bg bg2"></div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<h1>3</h1>
+				<div class="box">
+					<h2>How can we help you ?</h2>
+					<p>If you are a startup enthusiast and want to learn then we'll help you without any fees. We’ll also help you to grow your product from here. You will get an opportunity to work with great minds.</p>
+				</div>
+			</div>
+			<div class="bg bg3"></div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<h1>4</h1>
+				<div class="box">
+					<h2>How can you help us ?</h2>
+					<p>If you think you are good in any field and want to help us by mentoring or by sharing your experience then you can join us.</p>
+				</div>
+			</div>
+			<div class="bg bg4"></div>
+		</div>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	$(document).on('mouseover', '.aboutus .column', function() {
+  		$(this).addClass('active').siblings().removeClass('active')
+  	})
+  </script>
+</body>
+</html>
